@@ -4,7 +4,8 @@
   "main": "src/index.ts",
   "scripts": {
     "start": "ts-node src/index.ts",
-    "devStart": "nodemon src/index.ts"
+    "devStart": "nodemon src/index.ts",
+    "vercel-build": "tsc"
   },
   "dependencies": {
     "cors": "^2.8.5",
