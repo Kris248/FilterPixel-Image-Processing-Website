@@ -62,6 +62,9 @@ app.post('/upload', upload.single('image'), async (req: Request, res: Response) 
   }
 });
 
+app.get('/', (req: Request, res: Response) => {
+  res.send('<h1>Server is running on port 4000</h1>');
+});
 // Start server
 app.listen(4000, () => {
   console.log('Server is running on port 4000');
