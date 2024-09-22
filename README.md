@@ -14,16 +14,16 @@ Welcome to the Image Optimization Tool! This project allows you to adjust the co
 
 # Tech Stack Used!👇 
 ### Frontend:
-- **React**: A JavaScript library for building user interfaces.
-- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
-- **CSS**: Styling the application.
+- **<u>React</u>**: A JavaScript library for building user interfaces.
+- **<u>Typescript</u>**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **<u>CSS</u>**: Styling the application.
 
 ### Backend:
-- **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine.
-- **Express**: A minimal and flexible Node.js web application framework.
-- **Sharp**: High-performance image processing in Node.js.
-- **Multer**: Middleware for handling `multipart/form-data`, used for uploading files.
-- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **<u>Node.js</u>**: A JavaScript runtime built on Chrome's V8 JavaScript engine.
+- **<u>Express</u>**: A minimal and flexible Node.js web application framework.
+- **<u>Sharp</u>**: High-performance image processing in Node.js.
+- **<u>Multer</u>**: Middleware for handling `multipart/form-data`, used for uploading files.
+- **<u>Typescript</u>**: A typed superset of JavaScript that compiles to plain JavaScript.
 
 
 ## Installation
