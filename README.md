@@ -1,5 +1,5 @@
 # FilterPixel-Image-Processing-Website
-- Access the Website from here- https://filter-pixel-image-processing-website-zzwk.vercel.app/
+
 ### Originally Developed By: Krish Gautam 🧑🏻‍💻👋
 
 Welcome to the Image Optimization Tool! This project allows you to adjust the contrast, brightness, saturation, rotation, and format of your images in real-time.
