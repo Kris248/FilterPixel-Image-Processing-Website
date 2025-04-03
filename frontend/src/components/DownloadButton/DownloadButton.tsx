@@ -19,7 +19,7 @@ const DownloadButton: React.FC = () => {
     formData.append('rotation', rotation.toString());
 
     try {
-      const response = await axios.post('http://localhost:4000/upload', formData, { responseType: 'blob' });
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/upload`, formData, { responseType: 'blob' });
       const url = window.URL.createObjectURL(new Blob([response.data]));
       const link = document.createElement('a');
       link.href = url;
