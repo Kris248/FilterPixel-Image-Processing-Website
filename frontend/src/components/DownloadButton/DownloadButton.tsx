@@ -5,7 +5,7 @@ import './DownloadButton.css'; // Import the CSS file for styling
 
 const DownloadButton: React.FC = () => {
   const { image, cropDimensions, format, brightness, contrast, saturation, grayscale, rotation } = useContext(ImageContext)!;
-
+    
   const handleDownload = async () => {
     const formData = new FormData();
     formData.append('image', image as Blob);
@@ -31,7 +31,14 @@ const DownloadButton: React.FC = () => {
     }
   };
 
-  return <button className="download-button" onClick={handleDownload}>⭐Download Edited Image⭐</button>;
+  // return <button className="download-button" onClick={handleDownload}>⭐Download Edited Image⭐</button>;
+   return <>
+       <div className="upload-container">
+      <button className="upload-button" onClick={handleDownload}>
+      Download Edited Image
+      </button>
+    </div>
+   </>
 };
 
 export default DownloadButton;

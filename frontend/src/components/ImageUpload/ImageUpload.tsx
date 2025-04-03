@@ -20,7 +20,7 @@ const ImageUpload: React.FC = () => {
         id="file-input"
       />
       <label htmlFor="file-input" className="upload-button">
-        Choose Image:🤳
+        Choose Image
       </label>
     </div>
   );

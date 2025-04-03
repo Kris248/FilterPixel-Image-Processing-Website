@@ -8,7 +8,7 @@ app.use(cors());
 const upload = multer({ storage: multer.memoryStorage() }); // Use memory storage to access buffer directly
 
 app.post('/upload', upload.single('image'), async (req: Request, res: Response) => {
-  const { format, brightness, saturation, grayscale, rotation } = req.body;
+  const { format, brightness, contrast, saturation, grayscale, rotation, width, height } = req.body;
 
   if (!req.file) {
     return res.status(400).send('No file uploaded.');
@@ -16,6 +16,20 @@ app.post('/upload', upload.single('image'), async (req: Request, res: Response) 
 
   try {
     let image = sharp(req.file.buffer);
+
+
+    // ** Resize the image if width & height are provided **
+    if (width && height) {
+      image = image.resize(parseInt(width, 10), parseInt(height, 10));
+    }
+
+
+    // Apply contrast (sharp doesn't have direct contrast, but can be done via linear)
+    if (contrast) {
+      const contrastValue = parseFloat(contrast);
+      image = image.linear(contrastValue, -(128 * contrastValue) + 128); // Linear contrast adjustment
+    }
+
 
     // Apply image modifications without resizing
     image = image.modulate({

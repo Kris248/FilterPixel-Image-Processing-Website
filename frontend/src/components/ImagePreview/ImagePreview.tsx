@@ -1,6 +1,6 @@
-
 import React, { useContext, useEffect, useRef } from 'react';
 import { ImageContext } from '../../context/ImageContext';
+import './ImagePreview.css'; // Import CSS
 
 const ImagePreview: React.FC = () => {
   const { image, cropDimensions, brightness, contrast, saturation, grayscale, rotation } = useContext(ImageContext)!;
@@ -37,7 +37,11 @@ const ImagePreview: React.FC = () => {
 
   if (!image) return null;
 
-  return <canvas ref={canvasRef} />;
+  return (
+    <div className="image-preview-container">
+      <canvas ref={canvasRef} />
+    </div>
+  );
 };
 
 export default ImagePreview;
