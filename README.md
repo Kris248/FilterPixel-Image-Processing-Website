@@ -1,6 +1,8 @@
 # FilterPixel-Image-Processing-Website
-
 ### Originally Developed By: Krish Gautam 🧑🏻‍💻👋
+
+### LIVE:   https://filterpixel-online-image-editor.netlify.app/
+
 
 Welcome to the Image Optimization Tool! This project allows you to adjust the contrast, brightness, saturation, rotation, and format of your images in real-time.
 
