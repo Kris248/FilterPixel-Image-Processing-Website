@@ -73,7 +73,8 @@ Follow these steps to set up the project locally.
 4. Click the "Download Image" button to save the edited image.
 
 # Website Preview:
-![Untitled](https://github.com/user-attachments/assets/9ba5277e-1636-4a1a-9684-ef1b9233019d)
+![image](https://github.com/user-attachments/assets/31698cf5-839b-465c-90b2-583913c541e9)
+
 
 
 ## Contributing
